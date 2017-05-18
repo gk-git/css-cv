@@ -1,0 +1,51 @@
+.fixed-contact{display:block;z-index:4;position:fixed;top:10px;right:10px;width:50%}
+.header{position:fixed;color:red;top:0;left:0;width:100%;z-index:3;max-height:180px;background:#999}
+.header hgroup{display:inline-block;float:left;width:25%;text-align:center}
+.fixed-contact .contacts{background:#000}
+.fixed-contact h3{display:none}
+.float-left,section{float:left}
+.contact,h4{margin:0;padding:0}
+.contact .contact-value{display:inline;float:none}
+.contact .contact-type{color:#fff;margin:0;padding:0;width:28%;float:left;background:red}
+.content{margin:170px 10% 30px;font-size:1em}
+h3::before,h3:after{content:"";display:block}
+h3::before{background:red;float:left;border-radius:20px;margin-right:5px;width:20px;height:20px}
+h3:after{background:red;bottom:-10px;height:2px;position:relative;width:100%}
+section{width:50%;height:100%;margin:0}
+.skills-primary::before{content:"Main";margin:1em}
+.skills-secondary::before{content:"Other";margin:1em}
+.skill{margin:10px;padding:5px;background:gray}
+.skill span{width:0;background:red;display:block;padding:5px;color:#fff}
+.experience-type{color:red;font-weight:700}
+.experience-institution{color:red;font-weight:300}
+.experience-institution::before{content:" @ "}
+[data-skill="1"] span{width:10%}
+[data-skill="2"] span{width:20%}
+[data-skill="3"] span{width:30%}
+[data-skill="4"] span{width:40%}
+[data-skill="5"] span{width:50%}
+[data-skill="6"] span{width:60%}
+[data-skill="7"] span{width:70%}
+[data-skill="8"] span{width:80%}
+[data-skill="9"] span{width:90%}
+[data-skill="10"] span{width:100%}
+.experience-details{color:gray;margin-left:1em}
+.experience-location::before{content:"In "}
+.experience-date::before{content:"On"}
+.experience-date-separator{color:red}
+.contact-value a{text-decoration:none;color:red}
+@media only screen and (min-width: 768px) {
+    .fixed-contact{top:2.5%}
+}
+@media only screen and (max-width: 767px) {
+    .fixed-contact{position:static;top:0;display:none}
+    .header div{margin-left:20px}
+    figure{margin:0}
+    .header hgroup{display:block;text-align:left;width:100%}
+    .content{top:200px;margin-top:300px}
+    section{width:100%}
+    .header{max-height:300px}
+}
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    section{width:100%}
+}

@@ -1,0 +1,65 @@
+html{background:#fff}
+#wrapper{margin:5%}
+.header,hgroup{width:100%}
+.header hgroup::after{background:#d8d8d8;bottom:-10px;content:"";display:block;height:2px;position:relative;width:100%;background-color:red}
+figure{position:absolute;top:8%;right:8%;-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}
+figure img{display:inline-block;width:150%}
+hgroup h1{margin:0}
+hgroup h2{display:none}
+#competencies{position:relative;float:left}
+#competencies h3{position:absolute;margin:0;height:100%;float:left;border-right:2px solid #000}
+#competencies .skills{padding-left:200px;float:left;width:100%}
+#competencies .skills .skill{float:left;width:24%;margin:10px;background:teal}
+#competencies .skills .skill span::after{float:right}
+#competencies .skills.skills-secondary .skill{padding:5px 10px;margin:5px 10px}
+#competencies .skills .skill:last-child{clear:right}
+#education,#experiences,#hobbies{position:relative;float:left;margin-top:15px}
+#education h3,#experiences h3,#hobbies h3{margin:0;height:100%}
+.experience{position:relative;margin-top:10px;margin-bottom:10px}
+.experience-details{position:absolute;top:5px;right:5px;color:#aeb2a9}
+#hobbies .experience{float:left;padding-left:220px}
+#contact,#contact ul,#hobbies ul{float:left}
+#contact{position:relative;clear:left}
+#contact .contacts{float:left;padding-left:200px}
+#contact .contacts .contact{float:left;padding-left:50px;padding-right:50px;width:50px;height:50px}
+#about h3,#contact .contact-type,#contact h3,.contact-skype{display:none}
+.contact a,.contact-github dd,.contact-skype dd{height:160px;color:transparent;display:inline-block;background:50px 50px no-repeat}
+.contact-email a{background:url(../images/email.png)}
+.contact-facebook a{background:url(../images/facebook.png)}
+.contact-phone a,.contact-skype dd{background:url(../images/phone.png)}
+.contact-github dd{background:url(../images/github.png)}
+[data-skill="1"] span::after{content:"\2605"}
+[data-skill="2"] span::after{content:"\2605\2605"}
+[data-skill="3"] span::after{content:"\2605\2605\2605"}
+[data-skill="4"] span::after{content:"\2605\2605\2605\2605"}
+[data-skill="5"] span::after{content:"\2605\2605\2605\2605\2605"}
+[data-skill="6"] span::after{content:"\2605\2605\2605\2605\2605\2605"}
+[data-skill="7"] span::after{content:"\2605\2605\2605\2605\2605\2605\2605"}
+[data-skill="8"] span::after{content:"\2605\2605\2605\2605\2605\2605\2605\2605"}
+[data-skill="9"] span::after{content:"\2605\2605\2605\2605\2605\2605\2605\2605\2605"}
+[data-skill="10"] span::after{content:"\2605\2605\2605\2605\2605\2605\2605\2605\2605\2605"}
+#about{color:#d8d8d8;width:70%;margin-bottom:100px}
+#competencies .skills-primary .skill{padding:10px}
+#competencies .skills-primary .skill span::after{font-size:16px}
+#competencies .skills-secondary .skill span::after{font-size:12px}
+.experience-type{color:teal}
+.experience-institution{display:none}
+@media only screen and (min-width: 768px) {
+    #competencies h3{width:170px}
+    #education h3,#experiences h3{position:absolute;float:left;border-right:2px solid #000}
+    #experiences h3{width:170px}
+    #education h3{width:170px}
+    #education .experience,#experiences .experience{float:left;padding-left:200px}
+    #hobbies h3{position:absolute;width:170px;border-right:2px solid #000;float:left}
+    #hobbies ul{padding-left:200px}
+}
+@media only screen and (max-width: 767px) {
+    #about{width:100%}
+    #experiences h3{display:inline-block;border-bottom:2px solid #000}
+    #competencies h3{position:static;width:auto;float:none;border-right:none;border-bottom:2px solid #000}
+    #competencies .skills{float:left;padding-left:0}
+    #competencies .skills .skill{width:24%}
+    #competencies h3,#education h3{display:inline-block}
+    #education h3,#hobbies h3{border-bottom:2px solid #000}
+    #contact,figure{display:none}
+}

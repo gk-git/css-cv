@@ -36,6 +36,7 @@ figure img {
     display: inline-block;
     width: 150%;
 }
+
 hgroup {
 
     width: 100%;
@@ -80,10 +81,10 @@ hgroup h2 {
     margin: 10px;
 
 }
-#competencies .skills .skill span::after{
+
+#competencies .skills .skill span::after {
     float: right;
 }
-
 
 #competencies .skills.skills-secondary .skill {
 
@@ -171,7 +172,6 @@ hgroup h2 {
     float: left;
     padding-left: 200px;
 
-
 }
 
 #contact .contacts .contact {
@@ -187,7 +187,6 @@ hgroup h2 {
     display: none;
 }
 
-
 .contact a, .contact-skype dd, .contact-github dd {
     background-repeat: no-repeat;
     background-size: 50px 50px;
@@ -197,7 +196,6 @@ hgroup h2 {
     color: transparent;
     display: inline-block;
 }
-
 
 .contact-skype {
     display: none;
@@ -353,6 +351,7 @@ hgroup h2 {
         float: left;
 
     }
+
     #hobbies ul {
         padding-left: 200px;
 
@@ -388,6 +387,7 @@ hgroup h2 {
 
         padding-left: 0;
     }
+
     #competencies .skills .skill {
         width: 24%;
     }
@@ -396,6 +396,7 @@ hgroup h2 {
         display: inline-block;
         border-bottom: 2px solid black;
     }
+
     #hobbies h3 {
         border-bottom: 2px solid black;
     }
@@ -403,7 +404,6 @@ hgroup h2 {
     #contact {
         display: none;
     }
-
 
 }
 
