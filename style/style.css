@@ -1,0 +1,269 @@
+.fixed-contact {
+    width: 100%;
+    display: block;
+    z-index: 4;
+
+}
+
+.header {
+    position: fixed;
+    color: red;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #999999;
+
+}
+
+.header hgroup {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.fixed-contact .contacts {
+    background-color: black;
+
+}
+
+.fixed-contact h3 {
+    display: none;
+}
+
+.fixed-contact {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 50%;
+}
+
+.float-left {
+    float: left;
+
+}
+
+.contact {
+    margin: 0;
+    padding: 0;
+}
+
+.contact .contact-value {
+
+    display: inline;
+    float: none;
+}
+
+.contact .contact-type {
+    color: #fff;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    width: 28%;
+    float: left;
+}
+
+.content {
+
+    margin: 170px 10% 30px 10%;
+    font-size: 1em;
+
+}
+
+.header {
+    z-index: 3;
+    max-height: 180px;
+
+}
+
+h3::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: red;
+    display: block;
+    float: left;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+h3:after {
+    background: none repeat scroll 0 0 red;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 100%;
+}
+
+section {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: 0;
+
+}
+
+.skills-primary::before {
+    content: "Main";
+    margin: 1em;
+}
+
+.skills-secondary::before {
+    content: "Other";
+    margin: 1em;
+
+}
+
+.skill {
+    margin: 10px;
+    background-color: gray;
+    padding: 5px;
+}
+
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.skill span {
+    width: 0;
+    background: red;
+    display: block;
+    padding: 5px;
+    color: white;
+}
+
+.experience-type {
+    color: red;
+    font-weight: bold;
+
+}
+
+.experience-institution {
+    color: red;
+    font-weight: 300;
+}
+
+.experience-institution::before {
+    content: " @ ";
+}
+
+[data-skill="1"] span {
+    width: 10%;
+}
+
+[data-skill="2"] span {
+    width: 20%;
+}
+
+[data-skill="3"] span {
+    width: 30%;
+}
+
+[data-skill="4"] span {
+    width: 40%;
+}
+
+[data-skill="5"] span {
+    width: 50%;
+}
+
+[data-skill="6"] span {
+    width: 60%;
+}
+
+[data-skill="7"] span {
+    width: 70%;
+}
+
+[data-skill="8"] span {
+    width: 80%;
+}
+
+[data-skill="9"] span {
+    width: 90%;
+}
+
+[data-skill="10"] span {
+    width: 100%;
+}
+
+.experience-details {
+    color: gray;
+    margin-left: 1em;
+}
+
+.experience-location::before {
+    content: "In ";
+}
+
+.experience-date::before {
+    content: "On";
+}
+
+.experience-date-separator {
+    color: red;
+}
+
+.contact-value a {
+    text-decoration: none;
+    color: red;
+}
+
+/*Mobile style*/
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    .fixed-contact {
+        top: 2.5%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    .fixed-contact {
+        position: static;
+        top: 0;
+        display: none;
+    }
+    .header  div {
+        margin-left: 20px;
+    }
+    figure {
+        margin: 0;
+    }
+
+
+    .header hgroup {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .content {
+        top: 200px;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .header {
+        max-height: 300px;
+    }
+
+    .content {
+        margin-top: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+    section {
+        width: 100%;
+    }
+
+}

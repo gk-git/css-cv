@@ -1,0 +1,405 @@
+html {
+    background-color: #fff;
+
+}
+
+#wrapper {
+    margin: 5%;
+}
+
+.header {
+    width: 100%;
+}
+
+.header hgroup::after {
+    background: none repeat scroll 0 0 red;
+    background-color: #d8d8d8;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 100%;
+}
+
+figure {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg);
+}
+
+figure img {
+
+    display: inline-block;
+    width: 150%;
+}
+hgroup {
+
+    width: 100%;
+}
+
+hgroup h1 {
+    margin: 0;
+}
+
+hgroup h2 {
+    display: none;
+}
+
+#competencies {
+    position: relative;
+    float: left;
+}
+
+#competencies h3 {
+    position: absolute;
+    margin: 0px;
+
+    height: 100%;
+    float: left;
+    border-right: 2px solid black;
+
+}
+
+#competencies .skills {
+    padding-left: 200px;
+    float: left;
+    width: 100%;
+
+}
+
+#competencies .skills .skill {
+    float: left;
+
+    background-color: #008080;
+
+    width: 24%;
+    margin: 10px;
+
+}
+#competencies .skills .skill span::after{
+    float: right;
+}
+
+
+#competencies .skills.skills-secondary .skill {
+
+    padding: 5px 10px;
+    margin: 5px 10px;
+
+}
+
+#competencies .skills .skill:last-child {
+    clear: right;
+}
+
+#experiences {
+    position: relative;
+    float: left;
+    margin-top: 15px;
+}
+
+#experiences h3 {
+    margin: 0;
+    height: 100%;
+
+}
+
+.experience {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.experience-details {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #aeb2a9;
+}
+
+#education {
+    position: relative;
+    float: left;
+    margin-top: 15px;
+}
+
+#education h3 {
+    margin: 0;
+    height: 100%;
+
+}
+
+#hobbies {
+    position: relative;
+    float: left;
+    margin-top: 15px;
+}
+
+#hobbies h3 {
+    margin: 0;
+    height: 100%;
+
+}
+
+#hobbies .experience {
+    float: left;
+    padding-left: 220px;
+
+}
+
+#hobbies ul {
+    float: left;
+
+}
+
+#contact {
+    position: relative;
+    float: left;
+    bottom: -150px;
+    left: -150px;
+}
+
+#contact h3 {
+    display: none;
+
+}
+
+#contact .contacts {
+    float: left;
+    padding-left: 10px;
+
+}
+
+#contact .contacts .contact {
+    float: left;
+    padding-left: 200px;
+    width: 50px;
+    height: 50px;
+
+}
+
+#contact .contact-type {
+    display: none;
+}
+
+.contact a, .contact-skype dd, .contact-github dd {
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    height: 160px;
+    padding-left: 280px;
+    padding-top: 50px;
+    color: transparent;
+    display: inline-block;
+}
+
+.contact-skype {
+    display: none;
+}
+
+.contact-email a {
+    background-image: url("images/email.png");
+
+}
+
+.contact-facebook a {
+
+    background-image: url("images/facebook.png");
+
+}
+
+.contact-skype dd {
+
+    background-image: url("images/phone.png");
+
+}
+
+.contact-github dd {
+
+    background-image: url("images/github.png");
+
+}
+
+.contact-phone a {
+    background-image: url("images/phone.png");
+
+}
+
+#contact ul {
+    float: left;
+
+}
+
+[data-skill="1"] span::after {
+    content: "\2605";
+}
+
+[data-skill="2"] span::after {
+    content: "\2605\2605";
+}
+
+[data-skill="3"] span::after {
+    content: "\2605\2605\2605";
+}
+
+[data-skill="4"] span::after {
+    content: "\2605\2605\2605\2605";
+}
+
+[data-skill="5"] span::after {
+    content: "\2605\2605\2605\2605\2605";
+}
+
+[data-skill="6"] span::after {
+    content: "\2605\2605\2605\2605\2605\2605";
+}
+
+[data-skill="7"] span::after {
+    content: "\2605\2605\2605\2605\2605\2605\2605";
+}
+
+[data-skill="8"] span::after {
+    content: "\2605\2605\2605\2605\2605\2605\2605\2605";
+}
+
+[data-skill="9"] span::after {
+    content: "\2605\2605\2605\2605\2605\2605\2605\2605\2605";
+}
+
+[data-skill="10"] span::after {
+    content: "\2605\2605\2605\2605\2605\2605\2605\2605\2605\2605";
+}
+
+#about {
+    color: #d8d8d8;
+    width: 70%;
+    margin-bottom: 100px;
+}
+
+#competencies .skills-primary .skill {
+    padding: 10px;
+
+}
+
+#competencies .skills-primary .skill span::after {
+
+    font-size: 16px;
+}
+
+#competencies .skills-secondary .skill span::after {
+
+    font-size: 12px;
+}
+
+#about h3 {
+    display: none;
+}
+
+.experience-type {
+    color: #008080;
+}
+
+.experience-institution {
+    display: none;
+}
+
+/*Mobile style*/
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    #competencies h3 {
+        width: 170px;
+    }
+
+    #experiences h3 {
+        position: absolute;
+        float: left;
+        width: 170px;
+        border-right: 2px solid black;
+    }
+
+    #education h3 {
+        position: absolute;
+        float: left;
+        width: 170px;
+        border-right: 2px solid black;
+    }
+
+    #education h3 {
+        width: 170px;
+    }
+
+    #experiences .experience {
+        float: left;
+        padding-left: 200px;
+
+    }
+
+    #education .experience {
+        float: left;
+        padding-left: 200px;
+
+    }
+
+    #hobbies h3 {
+        position: absolute;
+        width: 170px;
+        border-right: 2px solid black;
+        float: left;
+
+    }
+    #hobbies ul {
+        padding-left: 200px;
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+    figure {
+        display: none;
+    }
+
+    #about {
+        width: 100%;
+    }
+
+    #experiences h3 {
+        display: inline-block;
+        border-bottom: 2px solid black;
+    }
+
+    #competencies h3 {
+        display: inline-block;
+        position: static;
+        width: auto;
+        float: none;
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+
+    #competencies .skills {
+        float: left;
+
+        padding-left: 0;
+    }
+    #competencies .skills .skill {
+        width: 24%;
+    }
+
+    #education h3 {
+        display: inline-block;
+        border-bottom: 2px solid black;
+    }
+    #hobbies h3 {
+        border-bottom: 2px solid black;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+}

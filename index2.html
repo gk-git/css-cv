@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- /Meta tags -->
+
+    <title>Gaby Karam | CV</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style/styles.css">
+    <style>
+        html {
+            background-color: #fff;
+
+        }
+
+        #wrapper {
+            margin: 5%;
+        }
+
+        .header {
+            width: 100%;
+        }
+
+        .header hgroup::after {
+            background: none repeat scroll 0 0 red;
+            background-color: #d8d8d8;
+            bottom: -10px;
+            content: "";
+            display: block;
+            height: 2px;
+            position: relative;
+            width: 100%;
+        }
+
+        figure {
+            position: absolute;
+            top: 8%;
+            right: 8%;
+            -ms-transform: rotate(-30deg); /* IE 9 */
+            -webkit-transform: rotate(-30deg); /* Chrome, Safari, Opera */
+            transform: rotate(-30deg);
+        }
+
+        hgroup {
+
+            width: 100%;
+        }
+
+        hgroup h1 {
+            margin: 0;
+        }
+
+        hgroup h2 {
+            display: none;
+        }
+
+        #competencies {
+            position: relative;
+            float: left;
+        }
+
+        #competencies h3 {
+            position: absolute;
+            margin: 0px;
+            width: 170px;
+            height: 100%;
+            float: left;
+            border-right: 2px solid black;
+
+        }
+
+        #competencies .skills {
+            float: left;
+            padding-left: 200px;
+
+        }
+
+        #competencies .skills .skill {
+            float: left;
+
+            background-color: #008080;
+
+            margin: 10px;
+
+        }
+
+        #competencies .skills.skills-secondary {
+            float: none;
+        }
+
+        #competencies .skills.skills-secondary .skill {
+
+            padding: 5px 10px;
+            margin: 5px 10px;
+
+        }
+
+        #competencies .skills .skill:last-child {
+            clear: right;
+        }
+
+        #experiences {
+            position: relative;
+            float: left;
+            margin-top: 15px;
+        }
+
+        #experiences h3 {
+            position: absolute;
+            margin: 0px;
+            width: 170px;
+            height: 100%;
+            float: left;
+            border-right: 2px solid black;
+
+        }
+
+        #experiences .experience {
+            float: left;
+            padding-left: 200px;
+
+        }
+        .experience {
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .experience-details {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: #aeb2a9;
+        }
+
+        #education {
+            position: relative;
+            float: left;
+            margin-top: 15px;
+        }
+
+        #education h3 {
+            position: absolute;
+            margin: 0px;
+            width: 170px;
+            height: 100%;
+            float: left;
+            border-right: 2px solid black;
+
+        }
+
+        #education .experience {
+            float: left;
+            padding-left: 200px;
+
+        }
+
+        #education h3 {
+            position: absolute;
+            margin: 0px;
+            width: 170px;
+            height: 100%;
+            float: left;
+            border-right: 2px solid black;
+
+        }
+
+        #education .experience {
+            float: left;
+            padding-left: 200px;
+
+        }
+
+        #hobbies {
+            position: relative;
+            float: left;
+            margin-top: 15px;
+        }
+
+        #hobbies h3 {
+            position: absolute;
+            margin: 0px;
+            width: 170px;
+            height: 100%;
+            float: left;
+            border-right: 2px solid black;
+
+        }
+
+        #hobbies .experience {
+            float: left;
+            padding-left: 220px;
+
+        }
+
+        #hobbies ul {
+            float: left;
+            padding-left: 200px;
+
+        }
+
+        #contact {
+            position: relative;
+            float: left;
+            bottom: -150px;
+            left: -150px;
+        }
+
+        #contact h3 {
+            display: none;
+
+        }
+
+        #contact .contacts {
+            float: left;
+            padding-left: 10px;
+
+        }
+
+        #contact .contacts .contact {
+            float: left;
+            padding-left: 200px;
+            width: 50px;
+            height: 50px;
+
+        }
+
+        #contact .contact-type {
+            display: none;
+        }
+
+        .contact a, .contact-skype dd, .contact-github dd {
+            background-repeat: no-repeat;
+            background-size: 50px 50px;
+            height: 160px;
+            padding-left: 280px;
+            padding-top: 50px;
+            color: transparent;
+            display: inline-block;
+        }
+
+        .contact-skype {
+            display: none;
+        }
+
+        .contact-email a {
+            background-image: url("images/email.png");
+
+        }
+
+        .contact-facebook a {
+
+            background-image: url("images/facebook.png");
+
+        }
+
+        .contact-skype dd {
+
+            background-image: url("images/phone.png");
+
+        }
+
+        .contact-github dd {
+
+            background-image: url("images/github.png");
+
+        }
+
+        .contact-phone a {
+            background-image: url("images/phone.png");
+
+        }
+
+        #contact ul {
+            float: left;
+
+        }
+
+        [data-skill="1"] span::after {
+            content: "\2605";
+        }
+
+        [data-skill="2"] span::after {
+            content: "\2605\2605";
+        }
+
+        [data-skill="3"] span::after {
+            content: "\2605\2605\2605";
+        }
+
+        [data-skill="4"] span::after {
+            content: "\2605\2605\2605\2605";
+        }
+
+        [data-skill="5"] span::after {
+            content: "\2605\2605\2605\2605\2605";
+        }
+
+        [data-skill="6"] span::after {
+            content: "\2605\2605\2605\2605\2605\2605";
+        }
+
+        [data-skill="7"] span::after {
+            content: "\2605\2605\2605\2605\2605\2605\2605";
+        }
+
+        [data-skill="8"] span::after {
+            content: "\2605\2605\2605\2605\2605\2605\2605\2605";
+        }
+
+        [data-skill="9"] span::after {
+            content: "\2605\2605\2605\2605\2605\2605\2605\2605\2605";
+        }
+
+        [data-skill="10"] span::after {
+            content: "\2605\2605\2605\2605\2605\2605\2605\2605\2605\2605";
+        }
+
+        #about {
+            color: #d8d8d8;
+            width: 70%;
+            margin-bottom: 100px;
+        }
+
+        #competencies .skills-primary .skill {
+            padding: 10px;
+
+        }
+
+        #competencies .skills-primary .skill span::after {
+
+            font-size: 16px;
+        }
+
+        #competencies .skills-secondary .skill span::after {
+
+            font-size: 12px;
+        }
+
+        #about h3 {
+            display: none;
+        }
+
+        .experience-type {
+            color: #008080;
+        }
+        .experience-institution {
+            display:  none;
+        }
+
+        /*Mobile style*/
+        @media only screen and (min-width: 768px) {
+            /* tablets and desktop */
+
+        }
+
+        @media only screen and (max-width: 767px) {
+            html {
+                width: 100%;
+            }
+            /* phones */
+            figure {
+                display: none;
+            }
+
+            #about {
+                width: 100%;
+            }
+
+            #competencies {
+                position: static;
+            }
+
+            #competencies h3 {
+                float: none;
+                border-right: none;
+                border-bottom: 2px solid black;
+                height: auto;
+
+            }
+
+            #competencies .skills {
+                float: none;
+                padding-left: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) and (orientation: portrait) {
+
+        }
+
+    </style>
+    <!-- /Stylesheets -->
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <div>
+            <hgroup>
+                <h1>Gaby Karam</h1>
+                <h2>Codes and Sleeps</h2>
+            </hgroup>
+            <figure>
+                <img src="./images/110x110.png" alt="Gaby Karam">
+            </figure>
+        </div>
+    </header>
+    <div class="content">
+        <section id="about">
+            <h3>About</h3>
+            <p>
+                Pellentesque nec nisi at sapien sagittis sagittis. Aliquam eu condimentum mauris. Proin accumsan enim at
+                risus hendrerit lobortis. Nunc sollicitudin sodales lectus, et rhoncus mi molestie hendrerit. Vestibulum
+                velit lorem, rhoncus a congue ultricies, faucibus facilisis risus. Mauris turpis ante, aliquet ac
+                venenatis at, ornare ut velit. Duis ut erat neque, eget consectetur tellus.
+            </p>
+        </section>
+        <section id="competencies">
+            <h3>Competencies</h3>
+            <div class='skills skills-primary'>
+                <div class='skill' data-skill="3">
+                    <span>HTML</span>
+                </div>
+                <div class='skill' data-skill="2">
+                    <span>CSS</span>
+                </div>
+                <div class='skill' data-skill="1">
+                    <span>Javascript</span>
+                </div>
+            </div>
+            <div class='skills skills-secondary'>
+                <div class='skill first' data-skill="5">
+                    <span>HTML</span>
+                </div>
+                <div class='skill' data-skill="3">
+                    <span>CSS</span>
+                </div>
+                <div class='skill' data-skill="4">
+                    <span>Javascript</span>
+                </div>
+            </div>
+        </section>
+        <section id="experiences">
+            <h3>Experiences</h3>
+            <div class="experience">
+                <h4>
+                    <span class="experience-type">Man2ouche Seller</span>
+                    <span class="experience-institution">Snack Edouard</span>
+                </h4>
+                <div class="experience-details">
+                    <span class="experience-location">Paris</span>
+                    <span class="experience-date">
+                      <span class="day">30</span>
+                      <span class="experience-date-separator">/</span>
+                      <span class="month">12</span>
+                      <span class="experience-date-separator">/</span>
+                      <span class="year">1995</span>
+                    </span>
+                </div>
+                <p class="experience-description">
+                    Pellentesque nec nisi at sapien sagittis sagittis. Aliquam eu condimentum mauris. Proin accumsan
+                    enim at risus hendrerit lobortis. Nunc sollicitudin sodales lectus, et rhoncus mi molestie
+                    hendrerit. Vestibulum velit lorem, rhoncus a congue ultricies, faucibus facilisis risus. Mauris
+                    turpis ante, aliquet ac venenatis at, ornare ut velit. Duis ut erat neque, eget consectetur tellus.
+                </p>
+            </div>
+            <div class="experience">
+                <h4>
+                    <span class="experience-type">Man2ouche Seller</span>
+                    <span class="experience-institution">Snack Edouard</span>
+                </h4>
+                <div class="experience-details">
+                    <span class="experience-location">
+                        Paris
+                    </span>
+                    <span class="experience-date">
+                      <span class="day">30</span>
+                      <span class="experience-date-separator">/</span>
+                      <span class="month">12</span>
+                      <span class="experience-date-separator">/</span>
+                      <span class="year">1995</span>
+                    </span>
+                </div>
+                <p class="experience-description">
+                    Pellentesque nec nisi at sapien sagittis sagittis. Aliquam eu condimentum mauris. Proin accumsan
+                    enim at risus hendrerit lobortis. Nunc sollicitudin sodales lectus, et rhoncus mi molestie
+                    hendrerit. Vestibulum velit lorem, rhoncus a congue ultricies, faucibus facilisis risus. Mauris
+                    turpis ante, aliquet ac venenatis at, ornare ut velit. Duis ut erat neque, eget consectetur tellus.
+                </p>
+            </div>
+        </section>
+        <section id="education">
+            <h3>Education</h3>
+            <div class="experience">
+                <h4>
+                    <span class="experience-type">Web Stack Training</span>
+                    <span class="experience-institution">Codi</span>
+                </h4>
+                <div class="experience-details">
+						<span class="experience-location">
+              Beirut
+            </span>
+                    <span class="experience-date">
+              <span class="day">30</span>
+              <span class="experience-date-separator">/</span>
+              <span class="month">12</span>
+              <span class="experience-date-separator">/</span>
+              <span class="year">1995</span>
+            </span>
+                </div>
+                <p class="experience-description">
+                    Pellentesque nec nisi at sapien sagittis sagittis. Aliquam eu condimentum mauris. Proin accumsan
+                    enim at risus hendrerit lobortis. Nunc sollicitudin sodales lectus, et rhoncus mi molestie
+                    hendrerit. Vestibulum velit lorem, rhoncus a congue ultricies, faucibus facilisis risus. Mauris
+                    turpis ante, aliquet ac venenatis at, ornare ut velit. Duis ut erat neque, eget consectetur tellus.
+                </p>
+            </div>
+            <div class="experience">
+                <h4>
+                    <span class="experience-type">Man2ouche Seller</span>
+                    <span class="experience-institution">Snack Edouard</span>
+                </h4>
+                <div class="experience-details">
+						<span class="experience-location">
+              Paris
+            </span>
+                    <span class="experience-date">
+              <span class="day">30</span>
+              <span class="experience-date-separator">/</span>
+              <span class="month">12</span>
+              <span class="experience-date-separator">/</span>
+              <span class="year">1995</span>
+            </span>
+                </div>
+                <p class="experience-description">
+                    Pellentesque nec nisi at sapien sagittis sagittis. Aliquam eu condimentum mauris. Proin accumsan
+                    enim at risus hendrerit lobortis. Nunc sollicitudin sodales lectus, et rhoncus mi molestie
+                    hendrerit. Vestibulum velit lorem, rhoncus a congue ultricies, faucibus facilisis risus. Mauris
+                    turpis ante, aliquet ac venenatis at, ornare ut velit. Duis ut erat neque, eget consectetur tellus.
+                </p>
+            </div>
+        </section>
+        <section id="hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+                <li>Watching Youtube</li>
+                <li>Sleeping</li>
+                <li>Writing CVs</li>
+            </ul>
+        </section>
+        <section id="contact" class="fixed-contact">
+            <h3>Contact</h3>
+            <div class="contacts">
+                <dl class="contact contact-email">
+                    <dt class="contact-type">Email</dt>
+                    <dd class="contact-value">
+                        <a href="mailto:jad@codi.tech">jad@codi.tech</a>
+                    </dd>
+                </dl>
+                <dl class="contact contact-skype">
+                    <dt class="contact-type">Skype</dt>
+                    <dd class="contact-value">jad.sarout</dd>
+                </dl>
+                <dl class="contact contact-phone">
+                    <dt class="contact-type">Phone/Whatsapp</dt>
+                    <dd class="contact-value">
+                        <a href="tel:+96170261482">+96170261482</a>
+                    </dd>
+                </dl>
+                <dl class="contact contact-github">
+                    <dt class="contact-type">Github</dt>
+                    <dd class="contact-value">
+                        <a href="https://github.com/Xananax/" target="_blank">Xananax</a>
+                    </dd>
+                </dl>
+                <dl class="contact contact-facebook">
+                    <dt class="contact-type">Facebook</dt>
+                    <dd class="contact-value">
+                        <a href="//www.facebook.com/sad.jarout" target="_blank">Gaby Karam</a>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
