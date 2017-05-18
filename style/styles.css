@@ -159,8 +159,7 @@ hgroup h2 {
 #contact {
     position: relative;
     float: left;
-    bottom: -150px;
-    left: -150px;
+    clear: left;
 }
 
 #contact h3 {
@@ -170,13 +169,15 @@ hgroup h2 {
 
 #contact .contacts {
     float: left;
-    padding-left: 10px;
+    padding-left: 200px;
+
 
 }
 
 #contact .contacts .contact {
     float: left;
-    padding-left: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
     width: 50px;
     height: 50px;
 
@@ -186,45 +187,47 @@ hgroup h2 {
     display: none;
 }
 
+
 .contact a, .contact-skype dd, .contact-github dd {
     background-repeat: no-repeat;
     background-size: 50px 50px;
     height: 160px;
-    padding-left: 280px;
-    padding-top: 50px;
+    /*padding-left: 280px;*/
+    /*padding-top: 50px;*/
     color: transparent;
     display: inline-block;
 }
+
 
 .contact-skype {
     display: none;
 }
 
 .contact-email a {
-    background-image: url("images/email.png");
+    background-image: url("../images/email.png");
 
 }
 
 .contact-facebook a {
 
-    background-image: url("images/facebook.png");
+    background-image: url("../images/facebook.png");
 
 }
 
 .contact-skype dd {
 
-    background-image: url("images/phone.png");
+    background-image: url("../images/phone.png");
 
 }
 
 .contact-github dd {
 
-    background-image: url("images/github.png");
+    background-image: url("../images/github.png");
 
 }
 
 .contact-phone a {
-    background-image: url("images/phone.png");
+    background-image: url("../images/phone.png");
 
 }
 
@@ -395,6 +398,10 @@ hgroup h2 {
     }
     #hobbies h3 {
         border-bottom: 2px solid black;
+    }
+
+    #contact {
+        display: none;
     }
 
 
